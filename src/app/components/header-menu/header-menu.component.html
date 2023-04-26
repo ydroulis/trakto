@@ -1,0 +1,4 @@
+<app-header-menu-dark *ngIf="dark, else darkMenu"></app-header-menu-dark>
+<ng-template #darkMenu>
+  <app-header-menu-light></app-header-menu-light>
+</ng-template>
