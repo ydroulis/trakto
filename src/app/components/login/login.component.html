@@ -1,0 +1,19 @@
+<section class="login-section">
+  <div class="form">
+    <img class="logo" src="../../../assets/images/Logo.svg" alt="Logotipo da Trakto">
+    <h1 class="text">Olá, faça login em sua conta.</h1>
+    <label class="email-label" for="email">E-mail</label>
+    <input [(ngModel)]="authData.email" class="email-input" type="email" id="email" name="email" />
+    <label class="password-label" for="password">Senha</label>
+    <input [(ngModel)]="authData.password" class="password-input" type="password" id="password" name="password" />
+    <button (click)="signIn()" class="login-button">
+      <div *ngIf="!loading, else loadingState">
+        <p>Entrar</p>
+      </div>
+      <ng-template #loadingState>
+        <div class="spinner"></div>
+        <p>Entrando</p>
+      </ng-template>
+    </button>
+  </div>
+</section>
