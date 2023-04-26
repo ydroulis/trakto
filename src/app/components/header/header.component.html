@@ -1,5 +1,9 @@
 <header *ngIf="!dark, else headerDark" class="header">
   <img class="logo" src="../../../assets/images/HeaderLogo.svg" alt="Logo da Trakto">
+  <button routerLink="/home" class="back">
+    <img src="../../../assets/images/logout.png" alt="Ícone para trocar de ambiente">
+    Trocar de ambiente
+  </button>
   <app-header-menu [dark]="false"></app-header-menu>
 </header>
 <ng-template #headerDark>

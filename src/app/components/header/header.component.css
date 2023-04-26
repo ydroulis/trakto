@@ -46,3 +46,32 @@ section {
   width: 143px;
   height: 49.27px;
 }
+
+.back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  width: 254px;
+  height: 56px;
+
+  border: 1px solid #7183A6;
+  border-radius: 8px;
+
+  background: transparent;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+
+  color: #7183A6;
+
+  cursor: pointer;
+
+  position: absolute;
+  left: 264px;
+  top: 10px;
+}
