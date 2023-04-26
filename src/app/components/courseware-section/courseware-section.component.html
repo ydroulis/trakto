@@ -1,0 +1,26 @@
+<article>
+  <header>
+    <div class="period">
+      <div class="info">
+        <h3>Semana 06/02 até 28/02</h3>
+      </div>
+      <div class="actions">
+        <button><img src="../../../assets/images/arrow-left.png" alt="Seta para a esquerda"></button>
+        <button><img src="../../../assets/images/arrow-right.png" alt="Seta para a esquerda"></button>
+      </div>
+    </div>
+    <button routerLink="/all-designs" *ngIf="type === 'default', else youtubeButton" class="seeAll">Ver todo
+      conteúdo</button>
+    <ng-template #youtubeButton>
+      <button class="youtube" (click)="redirect()">
+        <img src="../../../assets/images/icon-video.png" alt="Icone do Youtube">
+        Abrir no Youtube
+      </button>
+    </ng-template>
+  </header>
+  <div class="content">
+    <h2>{{ title }}</h2>
+    <p>{{ description }}</p>
+    <ng-content></ng-content>
+  </div>
+</article>
