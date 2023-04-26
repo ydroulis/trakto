@@ -13,6 +13,9 @@ import { HeaderComponent } from './components/header/header.component';
 import { HeaderMenuComponent } from './components/header-menu/header-menu.component';
 import { HeaderMenuDarkComponent } from './components/header-menu-dark/header-menu-dark.component';
 import { HeaderMenuLightComponent } from './components/header-menu-light/header-menu-light.component';
+import { CoursewareSectionComponent } from './components/courseware-section/courseware-section.component';
+import { DesignItemComponent } from './components/design-item/design-item.component';
+import { AllDesignsComponent } from './components/all-designs/all-designs.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import { HeaderMenuLightComponent } from './components/header-menu-light/header-
     HeaderComponent,
     HeaderMenuComponent,
     HeaderMenuDarkComponent,
-    HeaderMenuLightComponent
+    HeaderMenuLightComponent,
+    CoursewareSectionComponent,
+    DesignItemComponent,
+    AllDesignsComponent
   ],
   imports: [
     BrowserModule,
