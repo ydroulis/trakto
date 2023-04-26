@@ -1,0 +1,7 @@
+<div class="container">
+  <div class="imgContainer" (click)="redirect()" [ngClass]="customClass()">
+    <img class="cover" [src]="coverImg" alt="Imgem de capa">
+    <div *ngIf="type !== 'youtube'" class="tagPages">{{ pages }} Slides</div>
+  </div>
+  <h2 *ngIf="type !== 'youtube'" (click)="redirect()" class="title">{{ title }}</h2>
+</div>

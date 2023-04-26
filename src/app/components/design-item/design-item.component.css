@@ -1,0 +1,72 @@
+:host {
+  min-width: 310px;
+  height: 236px;
+}
+
+.imgContainer {
+  display: flex;
+  align-items: center;
+
+  width: 310px;
+  max-width: 310px;
+  height: 174px;
+
+  overflow: hidden;
+
+  border-radius: 0px;
+
+  cursor: pointer;
+
+  position: relative;
+}
+
+.no-border-radius {
+  border-radius: 0px;
+}
+
+.with-border-radius {
+  border-radius: 8px;
+}
+
+.cover {
+  width: 100%;
+}
+
+.title {
+  max-width: 310px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: #354564;
+
+  margin-top: 16px;
+
+  cursor: pointer;
+}
+
+.tagPages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  bottom: 20px;
+  left: 24px;
+
+  width: 66px;
+  height: 24px;
+
+  background: rgba(12, 12, 12, 0.7);
+  border-radius: 500px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
