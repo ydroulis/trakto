@@ -1,0 +1,16 @@
+<div class="menu">
+  <div class="date">
+    <img class="calendar-icon" src="../../../assets/images/calendarDark.png" alt="Ícone de um calendário">
+    <p>{{ currentDate | date: 'dd/MM/yyyy'}}</p>
+  </div>
+  <div class="dark-divider"></div>
+  <img class="notification-icon" src="../../../assets/images/notificationDark.png" alt="Ícone de notificações">
+  <div class="dark-divider"></div>
+  <div class="user-menu" (click)="openModal()">
+    <img *ngIf="avatarUrl, else avatarPlaceholder" class="avatar" [src]="avatarUrl" alt="Imagem de perfil">
+    <ng-template #avatarPlaceholder>
+      <img class="avatarPlaceholder" src="../../../assets/images/avatarPlaceholder.png" alt="Imagem de perfil">
+    </ng-template>
+    <img class="arrowDown-Icon" src="../../../assets/images/arrowDownDark.png" alt="Ícone de uma seta para baixo">
+  </div>
+</div>

@@ -1,0 +1,117 @@
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.date {
+  display: flex;
+
+  cursor: pointer;
+}
+
+.calendar-icon {
+  margin-right: 11px;
+}
+
+.menu p {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+
+  margin: 0px;
+
+  display: flex;
+  align-items: center;
+}
+
+.dark-divider {
+  width: 1px;
+  height: 32px;
+
+  background-color: #7183A6;
+  opacity: 0.32;
+
+  margin: 0px 32px;
+}
+
+.divider {
+  width: 1px;
+  height: 32px;
+
+  background-color: #7183A6;
+  opacity: 0.32;
+
+  margin: 0px 32px;
+}
+
+.notification-icon {
+  cursor: pointer;
+}
+
+.user-menu {
+  display: flex;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+
+  margin-right: 8px;
+}
+
+.avatarPlaceholder {
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+
+  margin-right: 8px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+
+  background-color: gray;
+
+  border-radius: 50%;
+
+  margin-right: 8px;
+}
+
+.modal {
+  display: flex;
+  align-items: center;
+
+  width: 100px;
+  height: 50px;
+
+  background-color: white;
+
+  position: absolute;
+  top: 60px;
+  right: 72px;
+
+  border-radius: 4px;
+
+  padding: 0px 12px;
+  box-sizing: border-box;
+}
+
+.modal button {
+  width: 100%;
+
+  background-color: transparent;
+
+  font-family: 'Roboto';
+
+  border: none;
+
+  cursor: pointer;
+}
