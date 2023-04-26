@@ -1,0 +1,48 @@
+section {
+  width: 100%;
+  height: 100vh;
+
+  background: url("https://s3-alpha-sig.figma.com/img/767e/fe3a/d123ca8d35792a659c81c042c24070fe?Expires=1683504000&Signature=MLKX7Ibw~be0uKHL6t0puZrxZxINlp6jEPlBMfmqEJOpiiM5dAEGKyW1Cn-rJeIV~DXVxdP9ei93czufbWeQaBQfQ6sKFVYwx4Hzn8F3vp0xqhqTfhWAcF3fRkJZXNLaJcOzbZc5mW5GgdfMYjU5qrPm8Tf1eetKKdaw-SVecvMxv7MjeSzVxzONbJWZk5y6cSXDb2Cu2DlAhm9dwRUN92suRlsCLIn4fJ5X7CFTo3NEnm7XirERSq60D4Bz7tlibDW-8Wz02J~pMde0vIU~bKZ8pMc00233EWWxZdB2eOeq~rbD4ZEoArDLhNS2KnM5rZdS~HLGJg8NeW5k9MqWGA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"), #1D1B1B;
+  background-size: contain;
+}
+
+.header-dark {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100vw;
+  height: 76px;
+
+  background-color: #252323;
+
+  padding: 0px 68px 0px 65px;
+  box-sizing: border-box;
+
+  position: relative;
+
+  color: #E4EBFB;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100vw;
+  height: 76px;
+
+  background-color: #ffffff;
+
+  padding: 0px 68px 0px 65px;
+  box-sizing: border-box;
+
+  position: relative;
+
+  color: #7183A6;
+}
+
+.logo {
+  width: 143px;
+  height: 49.27px;
+}

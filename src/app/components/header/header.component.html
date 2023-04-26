@@ -1,0 +1,10 @@
+<header *ngIf="!dark, else headerDark" class="header">
+  <img class="logo" src="../../../assets/images/HeaderLogo.svg" alt="Logo da Trakto">
+  <app-header-menu [dark]="false"></app-header-menu>
+</header>
+<ng-template #headerDark>
+  <header class="header-dark">
+    <img class="logo" src="../../../assets/images/DarkHeaderLogo.svg" alt="Logo da Trakto">
+    <app-header-menu [dark]="true"></app-header-menu>
+  </header>
+</ng-template>
