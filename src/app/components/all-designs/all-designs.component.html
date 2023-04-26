@@ -1,0 +1,13 @@
+<app-header [dark]="false"></app-header>
+<section>
+  <article>
+    <h2 class="sectionTitle">Material didático</h2>
+    <p class="sectionDescription">Acesse suas últimas apresentações de aula.</p>
+    <div class="designList">
+      <div *ngFor="let item of listaDesign.data">
+        <app-design-item [title]="item.title" [coverImg]="item.thumbs.low" [id]="item.id"
+          [pages]="item.pages.length"></app-design-item>
+      </div>
+    </div>
+  </article>
+</section>
