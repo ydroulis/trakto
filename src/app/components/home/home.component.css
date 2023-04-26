@@ -1,0 +1,92 @@
+section {
+  width: 100%;
+  height: 100vh;
+
+  background: url("https://s3-alpha-sig.figma.com/img/767e/fe3a/d123ca8d35792a659c81c042c24070fe?Expires=1683504000&Signature=MLKX7Ibw~be0uKHL6t0puZrxZxINlp6jEPlBMfmqEJOpiiM5dAEGKyW1Cn-rJeIV~DXVxdP9ei93czufbWeQaBQfQ6sKFVYwx4Hzn8F3vp0xqhqTfhWAcF3fRkJZXNLaJcOzbZc5mW5GgdfMYjU5qrPm8Tf1eetKKdaw-SVecvMxv7MjeSzVxzONbJWZk5y6cSXDb2Cu2DlAhm9dwRUN92suRlsCLIn4fJ5X7CFTo3NEnm7XirERSq60D4Bz7tlibDW-8Wz02J~pMde0vIU~bKZ8pMc00233EWWxZdB2eOeq~rbD4ZEoArDLhNS2KnM5rZdS~HLGJg8NeW5k9MqWGA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"), #1D1B1B;
+  background-size: contain;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+
+  width: 1700px;
+
+  margin: 0px auto 0px auto;
+  padding-top: 216px;
+
+  @media (max-width: 1919px) {
+    width: 100%;
+
+    margin: 0px auto 0px auto;
+    padding-top: 100px;
+
+  }
+}
+
+.courseware,
+.quiz,
+.picture,
+.youtube {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.title {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48.92px;
+  line-height: 130%;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #FFFFFF;
+
+  @media (max-width: 1919px) {
+    font-size: 30px;
+  }
+}
+
+.mini-divider {
+  width: 28px;
+  height: 4px;
+
+  margin-bottom: 32px;
+
+  @media (max-width: 1919px) {
+    margin-bottom: 18px;
+  }
+}
+
+.courseware .mini-divider {
+  background-color: #4173CD;
+}
+
+.quiz .mini-divider {
+  background-color: #1DC763;
+}
+
+.picture .mini-divider {
+  background-color: #F6B5FF;
+}
+
+.youtube .mini-divider {
+  background-color: #FF0000;
+}
+
+.nav div img {
+  width: 373px;
+  height: 373px;
+
+  @media (max-width: 1919px) {
+    width: 280px;
+    height: 280px;
+  }
+}
