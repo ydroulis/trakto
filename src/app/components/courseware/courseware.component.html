@@ -1,2 +1,31 @@
 <app-header [dark]="false"></app-header>
-<section></section>
+<section>
+  <img calss="main-img" src="../../../assets/images/mainImage.png"
+    alt="Imagem principal com rodrigo de braços cruzados">
+
+  <app-courseware-section [type]="'default'" [title]="'Material didático'"
+    [description]="'Acesse suas últimas apresentações de aula.'">
+    <div class="carousel">
+      <div *ngFor="let item of listaDesign.data">
+        <app-design-item [title]="item.title" [coverImg]="item.thumbs.low" [id]="item.id"
+          [pages]="item.pages.length"></app-design-item>
+      </div>
+    </div>
+  </app-courseware-section>
+  <app-courseware-section [type]="'youtube'" [title]="'Vídeo aulas'"
+    [description]="'Complemente os estudos assistindo o conteúdo de forma dinâmica.'">
+    <div class="carousel">
+      <app-design-item title="'Aula 1: Fono-ortografia'"
+        [coverImg]="'../../../assets/images/YouTube Player (Small)0.png'" [type]="'youtube'"></app-design-item>
+      <app-design-item title="'Aula 1: Fono-ortografia'"
+        [coverImg]="'../../../assets/images/YouTube Player (Small)1.png'" [type]="'youtube'"></app-design-item>
+      <app-design-item title="'Aula 1: Fono-ortografia'"
+        [coverImg]="'../../../assets/images/YouTube Player (Small)2.png'" [type]="'youtube'"></app-design-item>
+      <app-design-item title="'Aula 1: Fono-ortografia'"
+        [coverImg]="'../../../assets/images/YouTube Player (Small)3.png'" [type]="'youtube'"></app-design-item>
+      <app-design-item title="'Aula 1: Fono-ortografia'"
+        [coverImg]="'../../../assets/images/YouTube Player (Small)4.png'" [type]="'youtube'"></app-design-item>
+
+    </div>
+  </app-courseware-section>
+</section>
